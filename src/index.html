@@ -4,78 +4,75 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./../dist/output.css" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <title>Belton Web_site</title>
   </head>
   <body>
-      <!-- debut de la barre de Navigation-->
-      <nav class="bg-white shadow-md">
-        <div class="max-w-7xl mx-6 px-6 py-3 flex items-center justify-between gap-2">
-          <!-- Conteneur pour le logo et le menu Home -->
-          <div class="flex items-center space-x-2">
-            <!-- Logo -->
-            <img src="./../images/images logo home.jpg" class="w-16 h-16" alt="logo home">
-
-            <!-- Menu Home -->
-            <a href="#" class="text-black font-bold text-2xl">Home</a>
-          </div>
-
-          <!-- Dropdowns Menu -->
-          <div class="space-x-6 flex items-center">
-            <!-- Menu Home -->
-            <div class="relative">
-              <a href="#" class="text-gray-700 hover:text-green-500" onclick="toggleDropdown('dropdown-1')">Home</a>
-              <span class="text-gray-500 cursor-pointer ml-0" onclick="toggleDropdown('dropdown-1')">v</span>
-              <div id="dropdown-1" class="dropdown-content absolute hidden bg-white shadow-md rounded mt-1 w-40 py-2">
-                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Option 1</a>
-                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Option 2</a>
-                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Option 3</a>
-                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Option 4</a>
-              </div>
-            </div>
-
-            <!-- Menu Cowork Spaces -->
-            <div class="relative">
-              <a href="#" class="text-gray-700 hover:text-green-500" onclick="toggleDropdown('dropdown-2')">Cowork Spaces</a>
-              <span class="text-gray-500 cursor-pointer ml-0" onclick="toggleDropdown('dropdown-2')">v</span>
-              <div id="dropdown-2" class="dropdown-content absolute hidden bg-white shadow-md rounded mt-1 w-40 py-2">
-                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Option 1</a>
-                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Option 2</a>
-                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Option 3</a>
-                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Option 4</a>
-              </div>
-            </div>
-
-            <!-- Menu Listing -->
-            <div class="relative">
-              <a href="#" class="text-gray-700 hover:text-green-500" onclick="toggleDropdown('dropdown-3')">Listing</a>
-              <span class="text-gray-500 cursor-pointer ml-0" onclick="toggleDropdown('dropdown-3')">v</span>
-              <div id="dropdown-3" class="dropdown-content absolute hidden bg-white shadow-md rounded mt-1 w-40 py-2">
-                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Option 1</a>
-                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Option 2</a>
-                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Option 3</a>
-                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Option 4</a>
-              </div>
-            </div>
-
-            <!-- Menu Property Details -->
-            <div class="relative">
-              <a href="#" class="text-gray-700 hover:text-green-500" onclick="toggleDropdown('dropdown-4')">Property Details</a>
-              <span class="text-gray-500 cursor-pointer ml-0" onclick="toggleDropdown('dropdown-4')">v</span>
-              <div id="dropdown-4" class="dropdown-content absolute hidden bg-white shadow-md rounded mt-1 w-40 py-2">
-                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Option 1</a>
-                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Option 2</a>
-                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Option 3</a>
-                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200">Option 4</a>
-              </div>
-            </div>
-
-            <!-- Register Button -->
-            <button class="bg-green-600 text-white px-4 py-2 rounded cursor-pointer">
-              Register <span class="bg-white text-green-600 size-1">Free</span>
-            </button>
-          </div>
+    <nav class="bg-white justify-between">
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <div class="font-bold text-xl w-16 h-16">
+          <a href="#" class="flex items-center">
+            <img
+              src="./../images/images logo home.jpg"
+              alt="Logo"
+              class="mr-2"
+            /> <span class=" items-center size-12">Home</span>
+          </a>
         </div>
-      </nav>
+
+        <!-- Menu de navigation -->
+        <ul class="flex items-center space-x-6 text-black">
+          <li>
+            <a href="#" class="relative hover:text-blue-500"
+              >Home
+              <i
+                class="fa-light fa-chevron-down absolute right-0 top-1/2 transform -translate-y-1/2"
+              ></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="relative hover:text-blue-500"
+              >About
+              <i
+                class="fas fa-chevron-down absolute right-0 top-1/2 transform -translate-y-1/2"
+              ></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="relative hover:text-blue-500"
+              >Services
+              <i
+                class="fas fa-chevron-down absolute right-0 top-1/2 transform -translate-y-1/2"
+              ></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="relative hover:text-blue-500"
+              >Contact
+              <i
+                class="fas fa-chevron-down absolute right-0 top-1/2 transform -translate-y-1/2"
+              ></i
+            ></a>
+          </li>
+
+           <!-- Bouton Register -->
+        <div>
+          <a
+            href="#"
+            class="bg-blue-600 text-white p-2 mr-6 hover:bg-blue-700 flex items-center"
+          >
+            Register
+            <span
+              class="ml-2 bg-green-600 text-white hover:bg-green-900 p-2 text-sm"
+              >FREE</span
+            >
+          </a>
+        </div>
+        </ul>
+      </div>
+    </nav>
+    <!-- fin de la barre de navigation -->
 
     <script src="./../src/script.js"></script>
   </body>
